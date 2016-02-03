@@ -81,6 +81,43 @@ var bot = controller.spawn({
 }).startRTM();
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+controller.hears(['ok'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://1pun.ch/ok.png",
+        unfurl_media: true,
+    });
+});
+
+
+controller.hears(['nah meanz?'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://1pun.ch/eyebrows.gif",
+        unfurl_media: true,
+    });
+});
+
+
+controller.hears(['this is fine'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://1pun.ch/thisisfine.gif",
+        unfurl_media: true,
+    });
+});
+
+
+controller.hears('([\\s][u]{1}[\\s]|^[u]{1}[\\s]|[\\s][u]{1}$|^[u]$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "you*",
+    });
+});
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
 controller.hears(['hello','hi'],'direct_message,direct_mention,mention',function(bot, message) {
 
     bot.api.reactions.add({
