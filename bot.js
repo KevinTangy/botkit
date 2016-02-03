@@ -115,6 +115,14 @@ controller.hears('([\\s][u]{1}[\\s]|^[u]{1}[\\s]|[\\s][u]{1}$|^[u]$)','ambient',
 });
 
 
+controller.hears(['oh snapz'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "https://media.giphy.com/media/AT6LbRAazEoPm/giphy.gif",
+        unfurl_media: true,
+    });
+});
+
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
