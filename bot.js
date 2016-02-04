@@ -84,7 +84,7 @@ var bot = controller.spawn({
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-controller.hears(['ok'],'ambient',function(bot, message) {
+controller.hears('([\\s](ok)[\\s]|^(ok)[\\s]|[\\s](ok){1}$|^(ok)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "http://1pun.ch/ok.png",
         unfurl_media: true,
@@ -92,7 +92,7 @@ controller.hears(['ok'],'ambient',function(bot, message) {
 });
 
 
-controller.hears(['nah meanz?'],'ambient',function(bot, message) {
+controller.hears('([\\s](nah meanz?)[\\s]|^(nah meanz?)[\\s]|[\\s](nah meanz?){1}$|^(nah meanz?)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "http://1pun.ch/eyebrows.gif",
         unfurl_media: true,
@@ -100,7 +100,7 @@ controller.hears(['nah meanz?'],'ambient',function(bot, message) {
 });
 
 
-controller.hears(['this is fine'],'ambient',function(bot, message) {
+controller.hears(['([\\s](this is fine)[\\s]|^(this is fine)[\\s]|[\\s](this is fine){1}$|^(this is fine)$)'],'ambient',function(bot, message) {
     bot.reply(message, {
         text: "http://1pun.ch/thisisfine.gif",
         unfurl_media: true,
@@ -115,7 +115,7 @@ controller.hears('([\\s][u]{1}[\\s]|^[u]{1}[\\s]|[\\s][u]{1}$|^[u]$)','ambient',
 });
 
 
-controller.hears(['oh snapz'],'ambient',function(bot, message) {
+controller.hears(['([\\s](oh snapz)[\\s]|^(oh snapz)[\\s]|[\\s](oh snapz){1}$|^(oh snapz)$)'],'ambient',function(bot, message) {
     bot.reply(message, {
         text: "https://media.giphy.com/media/AT6LbRAazEoPm/giphy.gif",
         unfurl_media: true,
