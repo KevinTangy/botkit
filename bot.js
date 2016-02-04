@@ -123,6 +123,16 @@ controller.hears(['([\\s](oh snapz)[\\s]|^(oh snapz)[\\s]|[\\s](oh snapz){1}$|^(
 });
 
 
+controller.hears(['^(food[?])$'],'ambient',function(bot, message) {
+    bot.reply(message,'NO FOOD FO YOU FOO');
+});
+
+
+controller.hears(['^(coffee[?])$'],'ambient',function(bot, message) {
+    bot.reply(message,"I'm afraid I can't let you do that.");
+});
+
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
