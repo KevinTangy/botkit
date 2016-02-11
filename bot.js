@@ -108,7 +108,7 @@ controller.hears(['([\\s](this is fine)[\\s]|^(this is fine)[\\s]|[\\s](this is 
 });
 
 
-controller.hears('([\\s][u]{1}[\\s]|^[u]{1}[\\s]|[\\s][u]{1}$|^[u]$)','ambient',function(bot, message) {
+controller.hears('([\\s][u]{1}[\\s]|^[u]{1}[\\s]|[\\s][u]{1}$|^[u]$)','direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "you*",
     });
@@ -123,13 +123,34 @@ controller.hears(['([\\s](oh snapz)[\\s]|^(oh snapz)[\\s]|[\\s](oh snapz){1}$|^(
 });
 
 
-controller.hears(['^(food[?])$'],'ambient',function(bot, message) {
-    bot.reply(message,'NO FOOD FO YOU FOO');
+controller.hears(['(food[?])'],'ambient',function(bot, message) {
+    bot.reply(message,'*NO FOOD FO YOU FOO*');
 });
 
 
 controller.hears(['^(coffee[?])$'],'ambient',function(bot, message) {
-    bot.reply(message,"I'm afraid I can't let you do that.");
+    bot.reply(message,"*I'm afraid I can't let you do that.*");
+});
+
+
+controller.hears(['(^(we must go deeper)$)'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://inception.davepedu.com/",
+        unfurl_link: true,
+    });
+});
+
+
+controller.hears(['(^(nice)$)'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://i.imgur.com/lqKlotB.png",
+        unfurl_media: true,
+    });
+});
+
+
+controller.hears(['(hate u|hate you|feck)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+    bot.reply(message,'*COME AT ME BRO*');
 });
 
 
