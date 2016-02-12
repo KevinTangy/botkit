@@ -149,7 +149,7 @@ controller.hears(['(^(nice)$)'],'ambient',function(bot, message) {
 });
 
 
-controller.hears(['(hate u|hate you|feck)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(hate u|hate you|feck|fuck|fcuk)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message,'*COME AT ME BRO*');
 });
 
