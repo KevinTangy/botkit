@@ -170,7 +170,7 @@ controller.hears(['(moon|muun|night)'],'direct_message,direct_mention,mention,am
 });
 
 
-controller.hears(['PARTY HARD'],['direct_message','direct_mention','mention'],function(bot,message) {
+controller.hears(['PARTY HARD'],'direct_message,direct_mention,mention,ambient',function(bot,message) {
     bot.reply(message, {
         text: "FUCK YEAH! https://open.spotify.com/track/0E0bZtTG39K95uRjqBo1Mx",
         username: "Andrew W.K.",
@@ -179,7 +179,7 @@ controller.hears(['PARTY HARD'],['direct_message','direct_mention','mention'],fu
 });
 
 
-controller.hears(['(kevin)'],['direct_message','ambient'],function(bot,message) {
+controller.hears(['(kevin)'],'direct_message,ambient',function(bot,message) {
     bot.reply(message,{
         text: "KEVIN! http://i.imgur.com/U8Kbn7o.gif",
         username: "Kate McCallister",
