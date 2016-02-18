@@ -154,7 +154,7 @@ controller.hears(['(hate u|hate you|feck|fuck|fcuk)'],'direct_message,direct_men
 });
 
 
-controller.hears(['(sun|sunn|day|morning|mornin)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(sun|sunn|(day)|morning|mornin)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "SUNN IS TIGHT\nhttp://i.imgur.com/6kGcWnr.png",
         unfurl_media: true,
@@ -162,7 +162,7 @@ controller.hears(['(sun|sunn|day|morning|mornin)'],'direct_message,direct_mentio
 });
 
 
-controller.hears(['(moon|muun|night)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(moon|muun|(night))'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "MUUN IS TIGHT\nhttp://i.imgur.com/8dAN1Md.png",
         unfurl_media: true,
