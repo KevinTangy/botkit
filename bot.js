@@ -154,7 +154,7 @@ controller.hears(['(hate u|hate you|feck|fuck|fcuk)'],'direct_message,direct_men
 });
 
 
-controller.hears(['(sun|sunn|(day)|morning|mornin)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(\b(sun)\b|sunn|\b(day)\b|morning|mornin)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "SUNN IS TIGHT\nhttp://i.imgur.com/6kGcWnr.png",
         unfurl_media: true,
@@ -162,7 +162,7 @@ controller.hears(['(sun|sunn|(day)|morning|mornin)'],'direct_message,direct_ment
 });
 
 
-controller.hears(['(moon|muun|(night))'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(moon|muun)|\b(night)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "MUUN IS TIGHT\nhttp://i.imgur.com/8dAN1Md.png",
         unfurl_media: true,
@@ -184,6 +184,15 @@ controller.hears(['(kevin)'],'direct_message,ambient',function(bot,message) {
         text: "KEVIN! http://i.imgur.com/U8Kbn7o.gif",
         username: "Kate McCallister",
         icon_emoji: ":homealone:",
+    });
+});
+
+
+controller.hears(['(i found a bug)'],'direct_message,ambient',function(bot,message) {
+    bot.reply(message,{
+        text: "https://media.giphy.com/media/UAUtB4Oi9U4EM/giphy.gif",
+        username: "John Bot",
+        icon_emoji: ":johnmoji:",
     });
 });
 
