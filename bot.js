@@ -88,6 +88,8 @@ controller.hears('([\\s](ok)[\\s]|^(ok)[\\s]|[\\s](ok){1}$|^(ok)$)','ambient',fu
     bot.reply(message, {
         text: "http://1pun.ch/ok.png",
         unfurl_media: true,
+        username: "Saitama",
+        icon_emoji: ":saitama:",
     });
 });
 
@@ -96,6 +98,8 @@ controller.hears('([\\s](nah meanz?)[\\s]|^(nah meanz?)[\\s]|[\\s](nah meanz?){1
     bot.reply(message, {
         text: "http://1pun.ch/eyebrows.gif",
         unfurl_media: true,
+        username: "Saitama",
+        icon_emoji: ":saitama:",
     });
 });
 
@@ -104,6 +108,8 @@ controller.hears(['([\\s](this is fine)[\\s]|^(this is fine)[\\s]|[\\s](this is 
     bot.reply(message, {
         text: "http://1pun.ch/thisisfine.gif",
         unfurl_media: true,
+        username: "Saitama",
+        icon_emoji: ":saitama:",
     });
 });
 
