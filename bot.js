@@ -84,7 +84,7 @@ var bot = controller.spawn({
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-controller.hears('(^(bueller?)$)','ambient',function(bot, message) {
+controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "@channel",
         username: "???",
