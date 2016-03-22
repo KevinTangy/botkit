@@ -84,6 +84,15 @@ var bot = controller.spawn({
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
+controller.hears('(^(bueller?)$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "@channel",
+        username: "???",
+        icon_emoji: ":question:",
+    });
+});
+
+
 controller.hears('([\\s](ok)[\\s]|^(ok)[\\s]|[\\s](ok){1}$|^(ok)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "http://1pun.ch/ok.png",
