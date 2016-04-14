@@ -93,7 +93,7 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 });
 
 
-controller.hears('(^(ut)[?]$)','ambient',function(bot, message) {
+controller.hears('((^(ut)[?]$)|^(:ut2004:)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: ":johnmoji::gun:",
         username: "UNREAL",
