@@ -193,7 +193,7 @@ controller.hears(['PARTY HARD'],'direct_message,direct_mention,mention,ambient',
     });
 });
 
-controller.hears(['dam son'],'direct_message,direct_mention,mention,ambient',function(bot,message) {
+controller.hears(['(dam son)'],'direct_message,direct_mention,mention,ambient',function(bot,message) {
     bot.reply(message, {
         text: "http://i.imgur.com/7lZwLKc.jpg",
         username: "Dam Son",
