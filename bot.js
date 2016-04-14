@@ -93,6 +93,15 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 });
 
 
+controller.hears('(^(ut)[?]$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: ":johnmoji::gun:",
+        username: "UNREAL",
+        icon_emoji: ":ut2004:",
+    });
+});
+
+
 controller.hears('([\\s](ok)[\\s]|^(ok)[\\s]|[\\s](ok){1}$|^(ok)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "http://1pun.ch/ok.png",
