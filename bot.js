@@ -147,6 +147,14 @@ controller.hears(['([\\s](oh snapz)[\\s]|^(oh snapz)[\\s]|[\\s](oh snapz){1}$|^(
 });
 
 
+controller.hears(['([\\s](oh snap)[\\s]|^(oh snap)[\\s]|[\\s](oh snap){1}$|^(oh snap)$)'],'ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "https://www.youtube.com/watch?v=9F_MFU15-lI",
+        unfurl_media: true,
+    });
+});
+
+
 controller.hears(['(food[?])'],'ambient',function(bot, message) {
     bot.reply(message,'*NO FOOD FO YOU FOO*');
 });
