@@ -86,7 +86,7 @@ var bot = controller.spawn({
 
 controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
     bot.reply(message, {
-        text: "<!channel>",
+        text: "<!channel> Anyone? Anyone?",
         username: "Ben Stein",
         icon_emoji: ":ben_stein:",
     });
