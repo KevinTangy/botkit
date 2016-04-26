@@ -93,6 +93,16 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 });
 
 
+controller.hears('(^(omg)$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "https://www.youtube.com/watch?v=70utG1L5bfU",
+        unfurl_media: true,
+        username: "JOSEPH JOESTAR",
+        icon_emoji: ":joseph:",
+    });
+});
+
+
 controller.hears('((^(ut)[?]$)|^(:ut2004:)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: ":johnmoji::gun:",
