@@ -196,7 +196,7 @@ controller.hears(['(hate u|hate you|feck|fuck|fcuk)'],'direct_message,direct_men
 });
 
 
-controller.hears(['(\b(sun)\b|sunn|\b(day)\b|morning|mornin)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(sunn|morning|mornin)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "SUNN IS TIGHT\nhttp://i.imgur.com/6kGcWnr.png",
         unfurl_media: true,
@@ -204,9 +204,25 @@ controller.hears(['(\b(sun)\b|sunn|\b(day)\b|morning|mornin)'],'direct_message,d
 });
 
 
-controller.hears(['(moon|muun)|\b(night)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(muun)|\b(night)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "MUUN IS TIGHT\nhttp://i.imgur.com/8dAN1Md.png",
+        unfurl_media: true,
+    });
+});
+
+
+controller.hears(['\b(sun)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "SUN IS TIGHT\nhttp://www.serebii.net/sunmoon/sunboxbig.jpg",
+        unfurl_media: true,
+    });
+});
+
+
+controller.hears(['moon'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "MOON IS TIGHT\nhttp://www.serebii.net/sunmoon/moonboxbig.jpg",
         unfurl_media: true,
     });
 });
