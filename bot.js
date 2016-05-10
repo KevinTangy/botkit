@@ -204,7 +204,7 @@ controller.hears(['(sunn|morning|mornin)'],'direct_message,direct_mention,mentio
 });
 
 
-controller.hears(['(muun)|\b(night)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(muun)|\A(night)\z'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "MUUN IS TIGHT\nhttp://i.imgur.com/8dAN1Md.png",
         unfurl_media: true,
@@ -212,7 +212,7 @@ controller.hears(['(muun)|\b(night)\b'],'direct_message,direct_mention,mention,a
 });
 
 
-controller.hears(['\b(sun)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['\A(sun)\z'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "SUN IS TIGHT\nhttp://www.serebii.net/sunmoon/sunboxbig.jpg",
         unfurl_media: true,
@@ -220,7 +220,7 @@ controller.hears(['\b(sun)\b'],'direct_message,direct_mention,mention,ambient',f
 });
 
 
-controller.hears(['\b(moon)\b'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['\A(moon)\z'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "MOON IS TIGHT\nhttp://www.serebii.net/sunmoon/moonboxbig.jpg",
         unfurl_media: true,
