@@ -212,7 +212,7 @@ controller.hears(['(muun)|(night)'],'direct_message,direct_mention,mention,ambie
 });
 
 
-controller.hears(['(sun)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(sun)$'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "SUN IS TIGHT\nhttp://www.serebii.net/sunmoon/sunboxbig.jpg",
         unfurl_media: true,
@@ -220,7 +220,7 @@ controller.hears(['(sun)'],'direct_message,direct_mention,mention,ambient',funct
 });
 
 
-controller.hears(['\A(moon)\z'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
+controller.hears(['(moon)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
         text: "MOON IS TIGHT\nhttp://www.serebii.net/sunmoon/moonboxbig.jpg",
         unfurl_media: true,
