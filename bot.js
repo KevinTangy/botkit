@@ -219,6 +219,14 @@ controller.hears(['(sun)$'],'direct_message,direct_mention,mention,ambient',func
     });
 });
 
+controller.hears(['its missing something','it\'s missing something','something is missing'],'direct_message,direct_mention,mention,ambient',function(bot,message) {
+    bot.reply(message, {
+        text: "I gotta have more cowbell, baby!",
+        username: "The Bruce Dickinson",
+        icon_emoji: ":walken:",
+    });
+});
+
 
 controller.hears(['(moon)'],'direct_message,direct_mention,mention,ambient',function(bot, message) {
     bot.reply(message, {
