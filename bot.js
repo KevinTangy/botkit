@@ -95,6 +95,16 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 
 controller.hears('(^(omg)$)','ambient',function(bot, message) {
     bot.reply(message, {
+        text: "https://www.youtube.com/watch?v=Y8EMndSFFMk",
+        unfurl_media: true,
+        username: "DAAAAMNNNNN",
+        icon_emoji: ":man::skin-tone-6:",
+    });
+});
+
+
+controller.hears('(^(damn yo)$)','ambient',function(bot, message) {
+    bot.reply(message, {
         text: "https://www.youtube.com/watch?v=70utG1L5bfU",
         unfurl_media: true,
         username: "JOSEPH JOESTAR",
@@ -104,8 +114,11 @@ controller.hears('(^(omg)$)','ambient',function(bot, message) {
 
 
 controller.hears('((^(ut)[?]$)|^(:ut2004:)$)','ambient',function(bot, message) {
+    var players = [":johnmoji:", ":paulb:"];
+    var random = Math.floor( Math.random() * players.length + 1 );
+
     bot.reply(message, {
-        text: ":johnmoji::gun:",
+        text: players[random] + ":gun:",
         username: "UNREAL",
         icon_emoji: ":ut2004:",
     });
