@@ -93,7 +93,7 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 });
 
 
-controller.hears('(^(omg)$)','ambient',function(bot, message) {
+controller.hears('(^(damn yo)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "https://www.youtube.com/watch?v=Y8EMndSFFMk",
         unfurl_media: true,
@@ -103,7 +103,7 @@ controller.hears('(^(omg)$)','ambient',function(bot, message) {
 });
 
 
-controller.hears('(^(damn yo)$)','ambient',function(bot, message) {
+controller.hears('(^(omg)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "https://www.youtube.com/watch?v=70utG1L5bfU",
         unfurl_media: true,
