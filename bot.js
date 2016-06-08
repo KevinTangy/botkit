@@ -114,7 +114,7 @@ controller.hears('(^(omg)$)','ambient',function(bot, message) {
 
 
 controller.hears('((^(ut)[?]$)|^(:ut2004:)$)','ambient',function(bot, message) {
-    var players = [":johnmoji:", ":paulb:", ":notlikethis:"];
+    var players = [":johnmoji:", ":paulb:", ":notlikethis:", ":kaicon:"];
     var random = Math.floor( Math.random() * players.length );
 
     bot.reply(message, {
