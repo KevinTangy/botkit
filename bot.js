@@ -93,6 +93,15 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 });
 
 
+controller.hears('(^(swivel on this)$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://i.imgur.com/kKbcStP.gifv",
+        username: "SWIVEL ON THIS",
+        icon_emoji: ":spinner:",
+    });
+});
+
+
 controller.hears('(^(damn yo)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "https://www.youtube.com/watch?v=Y8EMndSFFMk",
