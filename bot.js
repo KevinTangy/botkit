@@ -113,6 +113,16 @@ controller.hears('(^(damn yo)$)','ambient',function(bot, message) {
 });
 
 
+controller.hears('(^(oh no he didn\'t)$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "https://media.giphy.com/media/Aff4ryYiacUO4/giphy.gif",
+        unfurl_media: true,
+        username: "OH YES HE DID YO",
+        icon_emoji: ":man::skin-tone-6:",
+    });
+});
+
+
 controller.hears('(^(omg)$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "https://www.youtube.com/watch?v=70utG1L5bfU",
