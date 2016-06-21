@@ -95,7 +95,7 @@ controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
 
 controller.hears('(^(swivel on this)$)','ambient',function(bot, message) {
     bot.reply(message, {
-        text: "https://apperian.slack.com/files/grant/F1JHUKLLA/ezgif-3713228096.gif",
+        text: "http://799bf3818010409fec47-e20c13f4066fb994848c9a5364747c93.r47.cf1.rackcdn.com/chris-spinner.gif",
         unfurl_media: true,
         username: "SWIVEL ON THIS",
         icon_emoji: ":spinner:",
