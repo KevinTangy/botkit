@@ -84,6 +84,15 @@ var bot = controller.spawn({
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
+controller.hears('(left #fooood)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "Bye, Felicia.",
+        username: "Bye",
+        icon_emoji: ":raising_hand:",
+    });
+});
+
+
 controller.hears('(^(b|B)ueller[?]$)','ambient',function(bot, message) {
     bot.reply(message, {
         text: "<!channel> Anyone? Anyone?",
