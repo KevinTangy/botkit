@@ -84,7 +84,7 @@ var bot = controller.spawn({
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-controller.hears('(left #fooood)','ambient',function(bot, message) {
+controller.hears('(left #fooood)','message_received',function(bot, message) {
     bot.reply(message, {
         text: "Bye, Felicia.",
         username: "Bye",
@@ -108,6 +108,16 @@ controller.hears('(^(swivel on this)$)','ambient',function(bot, message) {
         unfurl_media: true,
         username: "SWIVEL ON THIS",
         icon_emoji: ":spinner:",
+    });
+});
+
+
+controller.hears('(^(derp)$)','ambient',function(bot, message) {
+    bot.reply(message, {
+        text: "http://i.imgur.com/B6DH0s9.jpg",
+        unfurl_media: true,
+        username: "Derpxeggutor",
+        icon_emoji: ":pokemon-exeggutor:",
     });
 });
 
